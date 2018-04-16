@@ -1,0 +1,3 @@
+targets:
+  voting-auth: shared-us-west-2/cjfhmxpfy4ttu012431hm4moz
+  default: voting-auth
