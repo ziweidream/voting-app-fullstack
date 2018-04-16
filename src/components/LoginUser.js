@@ -21,12 +21,6 @@ class CreateLogin extends Component {
       )
     }
 
-    // redirect if user is logged in
-  /*  if (this.props.loggedInUserQuery.loggedInUser.id) {
-      console.warn('already logged in')
-      this.props.history.replace('/')
-    } */
-
     return (
       <div className='w-100 pa4 flex justify-center'>
 
