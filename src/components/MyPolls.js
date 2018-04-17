@@ -4,16 +4,12 @@ import NewPollLink from './NewPollLink'
 import { withRouter } from 'react-router-dom'
 import {graphql, compose} from 'react-apollo'
 import gql from 'graphql-tag'
-import { Share } from 'react-twitter-widgets'
-
 
 class MyPolls extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       id: ''
-
     }
 
     this.handleDelete = this.handleDelete.bind(this);
