@@ -267,14 +267,18 @@ const LOGGED_IN_USER_QUERY = gql `
     }
   }
 `
-export default compose(graphql(POLL_QUERY, {
+export default compose(
+  graphql(POLL_QUERY, {
   name: 'pollQuery',
   options: ({match}) => ({
     variables: {
       id: match.params.id
     }
   })
-}), graphql(UPDATE_OPTION_MUTATION, {name: 'UpdateOptionMutation'}), graphql(UPDATE_POLL_MUTATION, {name: 'updatePollMutation'}), graphql(LOGGED_IN_USER_QUERY, {
+}),                        
+ graphql(UPDATE_OPTION_MUTATION, {name: 'UpdateOptionMutation'}), 
+ graphql(UPDATE_POLL_MUTATION, {name: 'updatePollMutation'}), 
+ graphql(LOGGED_IN_USER_QUERY, {
   name: 'loggedInUserQuery',
   options: {
     fetchPolicy: 'network-only'
